@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte11</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <header>Estudiando Css | Página 11</header>
+    <h1>Degradados</h1>
+    <section>
+        <div class="desc">
+            <h4>Degradado lineal</h4>
+            <p>código: <strong> linear-gradient(red, rgb(199, 115, 115))</strong></p>
+            <p>salida:</p>
+            <div class="degradado" style="background: linear-gradient(red, rgb(0, 255, 34));">
+                <p>background: linear-gradient(red, rgb(0, 255, 34));</p>
+            </div>
+            <hr>
+            <h4>Paradas de colores</h4>
+            <p>solo se agregan más colores separados de una coma</p>
+            <p>ej:</p>
+            <div class="degradado" style="background: linear-gradient(red, green, white);">
+                <p>background: linear-gradient(red, green, white);</p>
+            </div>
+            <p>Las separaciones pueden definirse en porcentajes. ej:</p>
+            <p><strong>"background: linear-gradient(red 20%, green 5%, white 12%);</strong></p>
+
+            <p>Se puede definir la direccion del degradado</p>
+            <p>0deg es un degradado de izquierda a derecha</p>
+            <p>90deg crea de abajo hacia arriba</p>
+            <p><strong>" background:linear-gradient(100deg, blue,green,white);</strong></p>
+            <div class="degradado deg2 ">
+                <p> background:linear-gradient(100deg, blue...</p>
+            </div>
+            <p>también se puede repetir el degradado con:</p>
+            <p>repeating-linear-gradient.</p>
+
+            <h4>Degradado radial</h4>
+            <p>código <strong>radial-gradient(circle, green, yellow,blue);</strong></p>
+            <div class="degradado" style="background: radial-gradient(circle, green, yellow,blue);;">
+                <p> background:linear-gradient(100deg, blue...</p>
+            </div>
+
+            <h4>background-clip</h4>
+            <p>existe:</p>
+            <p>border-box, padding-box, content-box</p>
+            <p>ej: <strong>background-clip: content-box</strong></p>
+            <div style="background-image:url('https://img.freepik.com/vector-gratis/fondo-acuarela_220290-34.jpg?size=626&ext=jpg') ; background-clip:content-box ; border: 20px dotted rgba(0, 255, 34, 0.13);">
+                <p> background-clip</p>
+            </div>
+            <h4>Bordes tranparentes.</h4>
+            <p>-el ejemplo anterior contiene bordes transparentes</p>
+            <p>-se agrega con rgb</p>
+            <p>-es importante que contenga <strong>background-clip:padding-box;</strong> </p>
+            <p><strong>border: 20px dotted rgba(0, 255, 34, 0.13);</strong></p>
+
+            <h4>Multiples fondos</h4>
+            <p>sólo se necesita separar por comas</p>
+            <p><strong>background: url(algo) right top, url(otra-imagen) left top</strong></p>
+
+            <h4>OPACITY</h4>
+            <p><strong>opacity:0.3;</strong></p>
+           
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+
+</body>
+
+</html>

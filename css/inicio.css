@@ -1,0 +1,25 @@
+.centrar {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.contenido {
+    margin-top: 200px;
+    width: 50%;
+    height: 100%;
+}
+
+.contenido button {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+@media(max-width:750px) {
+    
+.contenido {
+    margin-top: 50px;
+    width: 90%;
+    height: 100%;
+}
+}

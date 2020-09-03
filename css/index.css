@@ -1,12 +1,27 @@
-body{
+body {
     margin: 0px;
     border-left: 1px solid royalblue;
     padding-left: 20px;
+    background-image: url("https://www.logaster.com.es/blog/wp-content/uploads/sites/4/2019/01/4-min-620x350.jpg");
+    color: white;
+    Background-Repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
-.desc p em{
-    color:rgb(0, 225, 255); 
-    background-color:rgb(0, 0, 0);
+.degradado {
+    width: 350px;
+    height: 30px;
+}
+
+.marca {
+    border: 3px dotted red;
+}
+
+.desc p em {
+    color: rgb(0, 225, 255);
+    background-color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 225, 255);
     border-radius: 4px;
     padding-left: 20px;
@@ -15,7 +30,7 @@ body{
     padding-top: 2px;
 }
 
-.desc{
+.desc {
     padding-left: 10px;
     padding-right: 10px;
     border: 1px dashed thistle;
@@ -23,48 +38,46 @@ body{
     margin-bottom: 2px;
     border-radius: 10px;
 }
-p{
+
+p {
     text-align: justify;
-    white-space: pre-wrap;
+    white-space: pre-line;
 }
 
-strong{
+strong {
     color: lawngreen;
     font-size: medium;
     background-color: rgba(0, 0, 0, 0.808);
-    font-family: monospace,'Times New Roman', Times, serif;
+    font-family: monospace, 'Times New Roman', Times, serif;
     padding-bottom: 3px;
     padding-left: 5px;
     padding-right: 5px;
-
 }
 
-h5{
+h5 {
     font-style: italic;
 }
 
-.desc h4{
+.desc h4 {
     font-variant: small-caps;
     font-size: large;
-    margin:0;
+    margin: 0;
     text-align: center;
-
 }
 
-i{
+i {
     color: rgb(0, 0, 0);
-    font-size: large;
-    background-color: rgb(179, 255, 0);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    background-color: rgb(255, 217, 0);
+    font-family: monospace;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 5px;
-    border: 1px solid rgb(0, 0, 0);
-    box-shadow: 0px 0px 20px 1px rgb(179, 255, 0);
+    box-shadow: 0px 0px 10px 10px rgb(255, 217, 0);
 }
 
-h3{
-    background-image:url("../img/img.jpg");
+h3 {
+    background-image: url("../img/img.jpg");
     color: white;
     width: max-content;
     padding-bottom: 50px;
@@ -73,16 +86,58 @@ h3{
     padding-right: 15px;
 }
 
-.ul-img{
-    list-style-image:url("../img/p.jpg");
+.ul-img {
+    list-style-image: url("../img/p.jpg");
     list-style-position: inside;
-    border: 1px dashed dimgrey ;
+    border: 1px dashed dimgrey;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-.row{
+.row {
     display: flex;
+}
+
+.tra {
+    Background: Linear-Gradient(90deg, Rgba(255, 255, 255, 0) 0%, Rgba(255, 255, 255, 0.2) 25%, Rgba(255, 255, 255, 0.2) 75%, Rgba(255, 255, 255, 0) 100%);
+    Box-Shadow: 0 0 25px Rgba(0, 0, 0, 0.1), Inset 0 0 1px Rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+    width: 200px;
+    height: auto;
+}
+
+.parent p:first-child {
+    color: aqua;
+}
+
+p::selection {
+    background: rgb(0, 0, 0);
+    color: rgb(116, 0, 0);
+}
+
+.caja-strong {
+    color: lawngreen;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.808);
+    font-family: monospace, 'Times New Roman', Times, serif;
+    width: auto;
+    height: auto;
+}
+
+.deg2{
+    background:linear-gradient(100deg, blue,green,white);
+}
+
+.hola{
+    background-color: rgb(0, 255, 34); 
+    height: 30px; 
+    width: 200px;
+     transition: width 1s;
+}
+.hola:hover{
+    color: chocolate;
+    width: 400px;
 }
