@@ -201,6 +201,7 @@ a{
     color: rgb(208, 255, 0);
     font-weight: bolder;
     font-size: 20px;
+    margin-left: 100px;
    
 }
 .descargar img{
@@ -208,6 +209,7 @@ a{
     margin-top: 30px;
     margin-bottom: 20px;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+
 }
 .descargar img:hover{
     filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7)); 
