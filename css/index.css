@@ -1,7 +1,7 @@
 html {
     height: 100%;
     background-color: black;
-    background-image: url("https://www.logaster.com.es/blog/wp-content/uploads/sites/4/2019/01/4-min-620x350.jpg");
+    background-image: url(https://www.xtrafondos.com/en/descargar.php?id=2887&resolucion=3416x2203);
     Background-Repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
@@ -192,6 +192,9 @@ p::selection {
 }
 
 @media (max-width: 600px) {
+    html {
+        background-size: 200% 100%;
+    }
     .hero-body {
         height: 100%;
         padding-bottom:50px !important;
