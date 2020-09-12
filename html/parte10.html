@@ -4,69 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <title>parte10</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
+    <div class="hero">
+        <div class="hero-body">
+            <div class="hero-section">
 
-    <header>Estudiando Css | Página 10</header>
-    <h1>pseudoclases Css3</h1>
-    <section>
-        <div class="desc">
-            <p>Las pseudoclases se usan para dar estilo a elementos o parte
-                de los elementos </p>
-            <p>comienzan con : (dos puntos)</p>
-            <p>los más comunes de usar son :first-child y :last-child</p>
-            <p>se aplica a los elementos hijos del elemento al que fué aplicado</p>
+                <header>Estudiando Css | Página 10</header>
+                <h1>pseudoclases Css3</h1>
+                <section>
+                    <div class="desc">
+                        <p>Las pseudoclases se usan para dar estilo a elementos o parte
+                            de los elementos </p>
+                        <p>comienzan con : (dos puntos)</p>
+                        <p>los más comunes de usar son :first-child y :last-child</p>
+                        <p>se aplica a los elementos hijos del elemento al que fué aplicado</p>
 
-            <p>codigo ejemplo: <strong>.parent p:first-child{color: red;}</strong></p>
-            <div class="parent" style="border: 1px dotted salmon; width: max-content;">
-                <p>hola1</p>
-                <p>hola2</p>
-                <p>hola3</p>
-            </div>
-            <hr>
-            <h4>PseudoElementos</h4>
-            <p>Seleccionan partes especificas de un elemento</p>
-            <p>hay 5 y comienzan con dos puntos dobles (::)</p>
-            <p>::first-line=la primera linea del texto.
-                ::first-letter=primera letra.
-                ::selection=la porcion de elemento seleccionado por el usuario.
-                ::before=inserta contenido anters de un elemento
-                ::after=inserta después</p>
+                        <p>codigo ejemplo: <strong>.parent p:first-child{color: red;}</strong></p>
+                        <div class="parent" style="border: 1px dotted salmon; width: max-content;">
+                            <p>hola1</p>
+                            <p>hola2</p>
+                            <p>hola3</p>
+                        </div>
+                        <hr>
+                        <h4>PseudoElementos</h4>
+                        <p>Seleccionan partes especificas de un elemento</p>
+                        <p>hay 5 y comienzan con dos puntos dobles (::)</p>
+                        <p>::first-line=la primera linea del texto.
+                            ::first-letter=primera letra.
+                            ::selection=la porcion de elemento seleccionado por el usuario.
+                            ::before=inserta contenido anters de un elemento
+                            ::after=inserta después</p>
 
-            <h4>Trabajando con pseudoclases</h4>
-            <p>::selection: sirve para colorear el texto seleccionado como ejemplo</p>
-            <div class="caja-strong">
-                <p>p::selection{
-                    background: rgb(0, 0, 0);
-                    color: rgb(116, 0, 0);
-                    }</p>
-            </div>
-            <p>::before= en el ejemplo se usa para agregar una imagen antes del texto, observar <em>content</em></p>
-            <div class="caja-strong">
-                <p>p::before{
-                    content: url("logo.jpg");
-                    }
-                </p>
-            </div>
-            <hr>
-            <h4>@font-face</h4>
-            <p>se puede usar fuentes personalizadas. se pueden descargar y personalizar</p>
-            <p>se crea una clase con el nombre de la nueva fuente</p>
-            <p>ej:</p>
-            <div class="caja-strong">
-                <p>@font-face{
-                font-family:Delicius;
-                font-weight: bold;
-                src: url(Delicius-bold.otf);
-                }
-                </p>
-            </div>
+                        <h4>Trabajando con pseudoclases</h4>
+                        <p>::selection: sirve para colorear el texto seleccionado como ejemplo</p>
+                        <div class="caja-strong">
+                            <p>p::selection{
+                                background: rgb(0, 0, 0);
+                                color: rgb(116, 0, 0);
+                                }</p>
+                        </div>
+                        <p>::before= en el ejemplo se usa para agregar una imagen antes del texto, observar
+                            <em>content</em></p>
+                        <div class="caja-strong">
+                            <p>p::before{
+                                content: url("logo.jpg");
+                                }
+                            </p>
+                        </div>
+                        <hr>
+                        <h4>@font-face</h4>
+                        <p>se puede usar fuentes personalizadas. se pueden descargar y personalizar</p>
+                        <p>se crea una clase con el nombre de la nueva fuente</p>
+                        <p>ej:</p>
+                        <div class="caja-strong">
+                            <p>@font-face{
+                                font-family:Delicius;
+                                font-weight: bold;
+                                src: url(Delicius-bold.otf);
+                                }
+                            </p>
+                        </div>
 
+                    </div>
+                </section>
+
+            </div>
         </div>
-    </section>
+    </div>
 
 </body>
 

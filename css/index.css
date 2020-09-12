@@ -1,13 +1,24 @@
+html{
+    height: 100%;
+}
 body {
     margin: 0px;
     border-left: 1px solid royalblue;
-    padding-left: 20px;
+    padding:0px;
     background-image: url("https://www.logaster.com.es/blog/wp-content/uploads/sites/4/2019/01/4-min-620x350.jpg");
     color: white;
     Background-Repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: 100% 100%;
+    height: auto;
+}
+
+.hero-body{
+    margin:3px;
+    padding:3px;
+    height: 100%;
+    padding-bottom: 100%s;
 }
 
 .degradado {
@@ -19,6 +30,18 @@ body {
     border: 3px dotted red;
 }
 
+.desc {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+    width: 430px;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(30px);
+}
+
 .desc p em {
     color: rgb(0, 225, 255);
     background-color: rgb(0, 0, 0);
@@ -28,15 +51,6 @@ body {
     padding-right: 20px;
     padding-bottom: 2px;
     padding-top: 2px;
-}
-
-.desc {
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 1px dashed thistle;
-    width: 430px;
-    margin-bottom: 2px;
-    border-radius: 10px;
 }
 
 p {
@@ -61,6 +75,7 @@ h5 {
 .desc h4 {
     font-variant: small-caps;
     font-size: large;
+    font-weight: bolder;
     margin: 0;
     text-align: center;
 }
@@ -68,12 +83,13 @@ h5 {
 i {
     color: rgb(0, 0, 0);
     font-size: medium;
+    font-weight: bolder;
     background-color: rgb(255, 217, 0);
     font-family: monospace;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 10px rgb(255, 217, 0);
+    box-shadow: 0px 0px 20px 0px rgb(255, 217, 0);
 }
 
 h3 {
@@ -127,17 +143,28 @@ p::selection {
     height: auto;
 }
 
-.deg2{
-    background:linear-gradient(100deg, blue,green,white);
+.deg2 {
+    background: linear-gradient(100deg, blue, green, white);
 }
 
-.hola{
-    background-color: rgb(0, 255, 34); 
-    height: 30px; 
+.hola {
+    background-color: rgb(0, 255, 34);
+    height: 30px;
     width: 200px;
-     transition: width 1s;
+    transition: width 1s;
 }
-.hola:hover{
+
+.hola:hover {
     color: chocolate;
     width: 400px;
+}
+
+@media (max-width: 600px) {
+  
+    .desc {
+        width: 100% !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  
 }

@@ -4,57 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <title>Document</title>
+ 
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
+    <div class="hero">
+        <div class="hero-body">
+            <div class="hero-section">
 
-    <header>Estudiando Css | Página 2</header>
-    <h1>Sobre texto...</h1>
-    <section>
+                <header>Estudiando Css | Página 2</header>
+                <h1>Sobre texto...</h1>
+                <section>
+                    <div class="desc">
+                        <h4>Font-Family</h4>
+                        <p>Se coloca una coma para agregar otra fuente como alternativa.</p>
+                        <p>A las fuentes que contengan más de una palabra, se les agrega ""</p>
+                        <p>Ejemplo: <strong>p.serif{font-family:Helvetica,Arial, sans-serif;}</strong></p>
 
-        <div class="desc">
-            <h4>Text-shadow</h4>
-            <p>Tiene 4 valores, el primero define la distancia horizontal, el segundo
-                define el valor vertical, el tercero el desenfoque y el ultimo el color.
-            </p>
-            <p>código: <strong>text-shadow:5px 2px 4px teal;</strong></p>
-            <p>salida: <span style="text-shadow:5px 2px 4px teal;">texto sombreado</span></p>
+                        <h4>Font-Size</h4>
+                        <p>Una forma de establecer el tamaño es con las palabras clave:</p>
+                        <p>xx-small, small, medium, large, larger, etc.. </p>
+                        <p>ejemplo: <strong>font-size:x-large</strong></p>
+                        <p>también puede ser en pixeles o en em</p>
+                        <p><em>1em=16px</em></p>
 
-            <h4>text-transform</h4>
-            <p>Se usa como por ejemplo, para capitalizar el texto</p>
-            <p>código: <strong>text-transform:capitalize;</strong></p>
-            <p>también se puede pasar todo a mayusculas o minusculas con <em>uppercase</em> o <em>lowecase</em></p>
+                        <h4>Font-style</h4>
+                        <p>se usa para dar estilo a las letras, como por ejemplo cursiva</p>
+                        <p>existe, normal, italic y oblique</p>
+                        <p><i> se puede lograr lo mismo con la etiqueta <strong> i </i></strong></i></p>
 
-            <h4>letter-spacing</h4>
-            <p>define el espacio entre las letras</p>
-            <p>código: <strong>letter-spacing: 10px;</strong></p>
-            <p>salida: <em style="letter-spacing: 10px;">texto espaciado</em></p>
-            <p><i>se puede usar también valores negativos</i></p>
+                        <h4>Font-weight</h4>
+                        <p>se usa para controlar el espesor o grosor del texto</p>
+                        <p>tenemos lighter, bold y bolder</p>
+                        <p>ej <strong>font-weight:bold;</strong></p>
+                        <p>salida: <em style="font-weight: bold;">texto con bold</em> <em>texto sin bold</em></p>
+                        <p><i>se puede lograr lo mismo con números del 100 al 900.</i></p>
 
-            <h4>word-spacing</h4>
-            <p>funciona como letter-spacing pero separa las palabras</p>
-            <p>código: <strong>word-spacing:30px;</strong></p>
+                        <h4>Font-variant</h4>
+                        <p>Permite usar "pequeñas mayusculas"</p>
+                        <p>ej: <strong>font-variant:small-caps;</strong></p>
+                        <p>salida: <em style="font-variant: small-caps;">también existe "normal"</em></p>
+                        <p><i>No todas las fuentes lo soportan, validar antes de usar</i></p>
+                    </div>
+                    <div class="desc">
+                        <h4>Text-align</h4>
+                        <p>el texto se puede centrar horizontalmente:</p>
+                        <p>left, right, center y justify</p>
+                        <p style="text-align: right;">básicamente funciona igual que word</p>
 
-            <h4>Saltos de linea</h4>
-            <p>white-space</p>
-            <p>podemos juntar todo el texto en una sola linea con <strong>nowrap</strong></p>
-            <p><strong>pre:</strong> se ajustará a saltos de linea y espacios.</p>
-            <p><strong>pre-line:</strong>sólo toma en cuenta los saltos de linea</p>
-            <p><strong>pre-wrap:</strong>se ajusta en saltos de linea y cuando sea necesario</p>
-            <p>código: <strong>white-space:pre-wrap;</strong></p>
-            <p>salida: <em style="white-space:pre-wrap;">esto funciona
-                    muy
-                    bien
-                </em></p>
-            <hr>
-            <h4>Break-wrap</h4>
-            <p>rompe palabras largas y las continua en la siguiente linea si se cambia de normal a break-word</p>
-            <p><strong>word-wrap:normal;</strong></p>
+                        <h4>Vertical-align</h4>
+                        <p>el texto se puede centrar verticalmente:</p>
+                        <p>top, middle, bottom</p>
+                        <p>código: <strong>vertical-align:bottom</strong></p>
+                        <p>también toma los valores baseline, sub, super, % y px(pt o cm).</p>
+                        <p>la diferencia está en que los primeros se situan a los extremos del espacio y el segundo
+                            solo es un poco
+                            más arriba o más abajo según decida.</p>
 
+                        <h4>Para que funcione en otros elementos...</h4>
+                        <p>Para que funcione en otros elementos debemos aplicar un formateo.</p>
+                        <p>para el elemento donde se situará(el div o section, etc...), necesitará
+                            <strong>display:inline-table</strong></p>
+                        <p>y despues ya podemos usar en el elemento el vertical-align asignando</p>
+                        <p><strong>display: table-cell; vertical-align: middle;</strong></p>
+
+                        <h4>text-decoration</h4>
+                        <p>...</p>
+                        <h4>Text-indent</h4>
+                        <p>Sirve como sangria, tiene 2 valores, lenght o inherit</p>
+                        <p>código <strong>text-indent:60px</strong></p>
+                    </div>
+                    <div class="desc">
+                        <h4>Text-shadow</h4>
+                        <p>Tiene 4 valores, el primero define la distancia horizontal, el segundo
+                            define el valor vertical, el tercero el desenfoque y el ultimo el color.
+                        </p>
+                        <p>código: <strong>text-shadow:5px 2px 4px teal;</strong></p>
+                        <p>salida: <span style="text-shadow:5px 2px 4px teal;">texto sombreado</span></p>
+
+                        <h4>text-transform</h4>
+                        <p>Se usa como por ejemplo, para capitalizar el texto</p>
+                        <p>código: <strong>text-transform:capitalize;</strong></p>
+                        <p>también se puede pasar todo a mayusculas o minusculas con <em>uppercase</em> o
+                            <em>lowecase</em></p>
+
+                        <h4>letter-spacing</h4>
+                        <p>define el espacio entre las letras</p>
+                        <p>código: <strong>letter-spacing: 10px;</strong></p>
+                        <p>salida: <em style="letter-spacing: 10px;">texto espaciado</em></p>
+                        <p><i>se puede usar también valores negativos</i></p>
+
+                        <h4>word-spacing</h4>
+                        <p>funciona como letter-spacing pero separa las palabras</p>
+                        <p>código: <strong>word-spacing:30px;</strong></p>
+
+                        <h4>Saltos de linea</h4>
+                        <p>white-space</p>
+                        <p>podemos juntar todo el texto en una sola linea con <strong>nowrap</strong></p>
+                        <p><strong>pre:</strong> se ajustará a saltos de linea y espacios.</p>
+                        <p><strong>pre-line:</strong>sólo toma en cuenta los saltos de linea</p>
+                        <p><strong>pre-wrap:</strong>se ajusta en saltos de linea y cuando sea necesario</p>
+                        <p>código: <strong>white-space:pre-wrap;</strong></p>
+                        <p>salida: <em style="white-space:pre-wrap;">esto funciona
+                                muy
+                                bien
+                            </em></p>
+                        <hr>
+                        <h4>Break-wrap</h4>
+                        <p>rompe palabras largas y las continua en la siguiente linea si se cambia de normal a
+                            break-word</p>
+                        <p><strong>word-wrap:normal;</strong></p>
+
+                    </div>
+                </section>
+
+            </div>
         </div>
-    </section>
+    </div>
 
 </body>
 
