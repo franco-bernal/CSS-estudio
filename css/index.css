@@ -18,7 +18,7 @@ body {
     margin:3px;
     padding:3px;
     height: 100%;
-    padding-bottom: 100%s;
+    padding-bottom: 100% !important;
 }
 
 .degradado {
@@ -160,7 +160,10 @@ p::selection {
 }
 
 @media (max-width: 600px) {
-  
+    .hero-body{
+        height: 100%;
+        padding-bottom: 70% !important;
+    }
     .desc {
         width: 100% !important;
         padding-left: 10px;
