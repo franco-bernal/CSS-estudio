@@ -191,22 +191,6 @@ p::selection {
     width: 400px;
 }
 
-@media (max-width: 600px) {
-    html {
-        background-size: 200% 100%;
-    }
-    .hero-body {
-        height: 100%;
-        padding-bottom:50px !important;
-    }
-    .desc {
-        width: 100% !important;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-
 a{
     text-decoration: none;
     color: aqua;
@@ -233,3 +217,19 @@ a:hover{
     font-size: 25px;
     color: chartreuse;
 }
+
+@media (max-width: 600px) {
+    html {
+        background-size: 200% 100%;
+    }
+    .hero-body {
+        height: 100%;
+        padding-bottom:50px !important;
+    }
+    .desc {
+        width: 100% !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
