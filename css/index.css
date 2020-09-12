@@ -194,7 +194,7 @@ p::selection {
 @media (max-width: 600px) {
     .hero-body {
         height: 100%;
-        padding-bottom: 70% !important;
+        padding-bottom:50px !important;
     }
     .desc {
         width: 100% !important;
