@@ -205,3 +205,31 @@ p::selection {
         padding-right: 10px;
     }
 }
+
+
+a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: 500;
+    font-size: 15px;
+}
+.descargar{
+    color: rgb(208, 255, 0);
+    font-weight: bolder;
+    font-size: 20px;
+   
+}
+.descargar img{
+    width:150px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+}
+.descargar img:hover{
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7)); 
+}
+
+a:hover{
+    font-size: 25px;
+    color: chartreuse;
+}
