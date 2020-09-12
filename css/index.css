@@ -1,24 +1,55 @@
-html{
+html {
     height: 100%;
-}
-body {
-    margin: 0px;
-    border-left: 1px solid royalblue;
-    padding:0px;
+    background-color: black;
     background-image: url("https://www.logaster.com.es/blog/wp-content/uploads/sites/4/2019/01/4-min-620x350.jpg");
-    color: white;
     Background-Repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
     background-size: 100% 100%;
-    height: auto;
 }
 
-.hero-body{
-    margin:3px;
-    padding:3px;
+body {
+    
+    border-left: 1px solid royalblue;
+    color: white;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hero-head {
+    height: 55px;
+    width: 100%;
+    opacity: 0.5;
+    background-color: #29ffffab;
+    backdrop-filter: blur(0px);
+    margin-bottom: 50px;
+}
+
+.titulo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 1 !important;
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 3em;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold !important;
+    color: white;
+    font-weight: 600;
+    line-height: 1.125;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero-body {
+    margin: 0px;
+    padding: 0px;
     height: 100%;
-    padding-bottom: 100% !important;
+    padding-bottom: 100px;
 }
 
 .degradado {
@@ -40,6 +71,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     backdrop-filter: blur(30px);
+    filter: grayscale(60%);
 }
 
 .desc p em {
@@ -160,7 +192,7 @@ p::selection {
 }
 
 @media (max-width: 600px) {
-    .hero-body{
+    .hero-body {
         height: 100%;
         padding-bottom: 70% !important;
     }
@@ -169,5 +201,4 @@ p::selection {
         padding-left: 10px;
         padding-right: 10px;
     }
-  
 }

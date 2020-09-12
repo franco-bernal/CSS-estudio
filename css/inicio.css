@@ -5,16 +5,19 @@
 }
 
 .contenido {
-    margin-top: 200px;
+    margin-top: 100px;
     width: 50%;
     height: 100%;
 }
 
 .contenido button {
     border:2px solid rgba(7, 226, 255, 0.466);
+    height: 50px;
     width: 100%;
+    font-variant:small-caps;
+    font-weight: 900;
     margin-bottom: 10px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.753);
     color:white;
     border-radius: 4px;
 }
