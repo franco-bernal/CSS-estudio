@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <title>menuburger</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero-body">
+            <div class="hero-body">
+                <div class="hero-head ">
+
+                </div>
+                <a href="https://francobg1.github.io/CSS-estudio/">
+                    <div class="titulo ">
+                        <h1 class="">Estudio Css</h1>
+                    </div>
+                </a>
+                <div class="hero-section">
+
+                    <header>Estudiando Css | Página 16</header>
+                    <h1>Menu burger</h1>
+                    <section>
+                        <div class="desc">
+                            <h4>agregar menu burguer</h4>
+                            <p>menu burger junto con el icono</p>
+                            <br>
+                            <p><strong>el CSS</strong></p>
+                            <textarea cols="30" rows="10">
+/*MENU BURGER*/
+
+.sidebar {
+    position: fixed;
+    height: 400px;
+    width: 250px;
+    margin-right: -5px;
+    margin-top: 10px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0 5px black;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+}
+
+.sidebar ul, .sidebar li {
+    margin: 0;
+    padding: 0;
+    list-style: none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width: 200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar a:hover {}
+
+#abrir {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#cerrar {
+    display: none;
+    color: rgba(255, 235, 205, 0);
+    font-size: 0px;
+}
+
+/*FIN BURGUER MENU*/
+
+.menu-g {
+    width: 90%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+}
+
+.menu-g .columns {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+    display: block;
+}
+
+.menu-g .column {
+    height: 100px;
+    border-bottom: 0px solid #409FA2;
+}
+
+.menu-g h1 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    font-family: reg-monse;
+}
+
+.burger {
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    color: tomato;
+    margin-top: 20px;
+}
+                            </textarea>
+
+                            <br>
+                            <br>
+                            <p><strong>El html</strong></p>
+                            <textarea cols="30" rows="10">
+                                <div class="">
+                                    <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">
+                                        <img class="burger" src="{{url('/img/Partes/burger.png')}}" alt="Image" />
+                                    </a>
+                                    <a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()">Cerrar menu</a>
+                            
+                                    <div id="sidebar" class="sidebar scrol">
+                                        <div class="columns">
+                                            <a href="#" class="boton-cerrar" onclick="ocultar()">&times;</a>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <div class="menu-g">
+                                            <div class="columns">
+                                                <div class="column menu-hover is-12-fullhd is-12-desktop  is-12-tablet  is-12-mobile ">
+                                                    <a href="">
+                                                        <h1>CRM lite</h1>
+                                                    </a>
+                                                </div>
+                                                <div class="column is-12-fullhd is-12-desktop  is-12-tablet  is-12-mobile ">
+                                                    <a href="{{ url('/home') }}">
+                                                        <h1>Explora</h1>
+                                                    </a>
+                                                </div>
+                                                <div class="column is-12-fullhd is-12-desktop  is-12-tablet  is-12-mobile ">
+                                                    <a href="">
+                                                        <h1>Aplica</h1>
+                                                    </a>
+                                                </div>
+                                            </div>
+                            
+                                            <script>
+                                                document.getElementById("sidebar").style.width = "0";
+                                                // document.getElementById("contenido").style.marginLeft = "0";
+                                                document.getElementById("abrir").style.display = "inline";
+                                                document.getElementById("cerrar").style.display = "none";
+                                            </script>
+                            
+                            
+                            
+                                        </div>
+                                    </div>
+                                </div>
+                             </textarea>
+
+                             <br>
+                             <br>
+                             <h1>guarda el icono</h1>
+                             <a href="../img/burger.png" target="_blank" download><img src="../img/burger.png" alt=""></a>
+                            </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
