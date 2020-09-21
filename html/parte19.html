@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <title>movimientos</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero-body">
+            <div class="hero-body">
+                <div class="hero-head ">
+
+                </div>
+                <a href="https://francobg1.github.io/CSS-estudio/">
+                    <div class="titulo ">
+                        <h1 class="">Estudio Css</h1>
+                    </div>
+                </a>
+                <div class="hero-section">
+
+                    <header>Estudiando Css | Página 19</header>
+                    <h1>movimientos</h1>
+                    <section>
+                        <div class="desc">
+                            <h4>Rotar</h4>
+                            <p> HTML
+                                Para mostrar el movimiento, en este ejemplo usaremos un lápiz.</p>
+
+                            <textarea name="" id="" cols="30" rows="10">
+                                <div id="axis" class="six">
+                                    <img class="object pencil rotate360cw" src="images/pencil.png" />
+                                </div>
+                         </textarea>
+                            <p> CSS
+                                Y rotaremos el objeto 360 grados en el sentido de las agujas del reloj.</p>
+                            <textarea name="" id="" cols="30" rows="10">
+    #axis:hover .rotate360cw {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        }
+</textarea>
+                            <hr>
+                            <h1>Movimientos en direccion multiple</h1>
+                            <textarea name="" id="" cols="30" rows="10">
+                                #axis:hover .multiple {
+                                    transform: translate(350px, -350px) rotate(360deg);
+                                    -webkit-transform: translate(350px, -350px) rotate(360deg);
+                                    -o-transform: translate(350px, -350px) rotate(360deg);
+                                    -moz-transform: translate(350px, -350px) rotate(360deg);
+                                }
+                            </textarea>
+
+                            <h1>Referencias <a href="https://webdesign.tutsplus.com/es/articles/css3-transitions-and-transforms-from-scratch--webdesign-4975">https://webdesign.tutsplus.com/es/articles/css3-transitions-and-transforms-from-scratch--webdesign-4975</a></h1>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

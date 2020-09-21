@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <title>Brillo</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero-body">
+            <div class="hero-body">
+                <div class="hero-head ">
+
+                </div>
+                <a href="https://francobg1.github.io/CSS-estudio/">
+                    <div class="titulo ">
+                        <h1 class="">Estudio Css</h1>
+                    </div>
+                </a>
+                <div class="hero-section">
+
+                    <header>Estudiando Css | Página 18</header>
+                    <h1>Brillo</h1>
+                    <section>
+                        <div class="desc">
+                            <h4>Brillo usando imagen</h4>
+                            <p>Al objeto se le agrega un span vacío</p>
+                            <textarea name="" id="" cols="30" rows="10">
+<a href="#" class="brillo"><img src="/logocss.png" alt="css"  /><span></span></a>
+                            </textarea>
+
+
+                            <p>Se crea el objeto que tendrá el Brillo, debe tener el overflow:hidden; y
+                                position:relative</p>
+                            <textarea name="" id="" cols="30" rows="10">
+                                .brillo{
+                                    position:relative;
+                                    display: block;
+                                    height: 133px;
+                                    width: 132px;  
+                                    text-decoration:none;
+                                    overflow:hidden;
+                                }
+                            </textarea>
+                            <br>
+                            <p>El span tambien debe tener position relative, será animado con una transición</p>
+                            <textarea name="" id="" cols="30" rows="10">
+                                .hero-head:hover span{
+                                    background-position: 1000px 0px;
+                                    -webkit-transition-property: all;
+                                    -webkit-transition-duration: 1s;
+                                    transition-property: all;
+                                    transition-duration: 1s;
+                                }
+                            </textarea>
+                            <h1>imagenes usadas:</h1>
+                            <a href="../img/brillos/brillo.png"><img src="../img/brillos/brillo.png" alt=""></a>
+                            <p>Otro tamaño</p>
+                            <a href="../img/brillos/brillog.png"><img src="../img/brillos/brillog.png" alt=""></a>
+                            <hr>
+                            <h1>Referencia :  <a href="https://mmteam.controldedominios.com/entradaBlog.asp?blog=3&cod=57">https://mmteam.controldedominios.com/entradaBlog.asp?blog=3&cod=57</a></h1>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
