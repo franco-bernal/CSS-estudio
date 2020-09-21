@@ -254,7 +254,6 @@ textarea{
     color: white;
     font-weight: 600;
     line-height: 1.125;
-    border: 1px solid red;
     text-shadow: 0 0 30px #fff;
 }
 .hero-head a:hover{
